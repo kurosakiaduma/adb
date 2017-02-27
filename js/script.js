@@ -5,8 +5,8 @@ function Contact(first, last) {
 }
 
 //user interface logic
-$document.ready(function(){
-    $("form#new-contact").submit((function) {
+$(document).ready(function(){
+    $("form#new-contact").submit(function(event) {
         event.preventDefault();
 
         var inputtedFirstName = $("input#new-first-name").val();
