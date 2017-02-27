@@ -5,7 +5,7 @@ function Contact(first, last) {
 }
 
 //user interface logic
-$document.ready(function){
+$document.ready(function(){
     $("form#new-contact").submit((function) {
         event.preventDefault();
 
@@ -19,5 +19,5 @@ $document.ready(function){
         $("input#new-first-name").val("");
         $("input#new-last-name").val("");
 
-    }
-}
+    });
+});
